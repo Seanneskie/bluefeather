@@ -7,11 +7,10 @@ export default function Home() {
       <header className="bg-gradient-to-r from-pacific-cyan to-indigo-dye text-white py-16 px-8 sm:px-20">
         <div className="max-w-6xl mx-auto text-center">
           <h1 className="text-4xl sm:text-6xl font-bold mb-6">
-            Welcome to <span className="text-orchid-pink">StartupName</span>
+            Welcome to Blue Feather - <span className="text-orchid-pink"> AR-Powered, Offline First Aid Solutions</span>
           </h1>
           <p className="text-lg sm:text-xl mb-8">
-            Empowering innovation and driving success through cutting-edge
-            solutions.
+            Empowering Emergency Response: A Solution for Critical Moments
           </p>
           <a
             href="#services"
@@ -31,36 +30,36 @@ export default function Home() {
               <Image
                 src="/feature1.svg"
                 alt="Feature 1"
-                width={80}
-                height={80}
+                width={100}
+                height={100}
                 className="mx-auto mb-4"
               />
-              <h3 className="text-xl font-semibold mb-2">Feature One</h3>
+              <h3 className="text-xl font-semibold mb-2">Augmented Reality (AR)-Based First Aid Guidance</h3>
               <p>
-                Discover seamless solutions tailored to your business needs.
+              Provides real-time, step-by-step visual instructions tailored to specific emergencies, helping students overcome the panic and memory lapses that often occur during critical moments. 
               </p>
             </div>
             <div className="p-6 bg-white shadow-lg rounded-lg">
               <Image
                 src="/feature2.svg"
                 alt="Feature 2"
-                width={80}
-                height={80}
+                width={100}
+                height={100}
                 className="mx-auto mb-4"
               />
-              <h3 className="text-xl font-semibold mb-2">Feature Two</h3>
-              <p>Accelerate growth with innovative tools and insights.</p>
+              <h3 className="text-xl font-semibold mb-2">Offline Access to Critical Information</h3>
+              <p>In low-connectivity environments or during network outages, users can still access preloaded first-aid protocols and visual guides.</p>
             </div>
             <div className="p-6 bg-white shadow-lg rounded-lg">
               <Image
                 src="/feature3.svg"
                 alt="Feature 3"
-                width={80}
-                height={80}
+                width={100}
+                height={100}
                 className="mx-auto mb-4"
               />
-              <h3 className="text-xl font-semibold mb-2">Feature Three</h3>
-              <p>Empowering businesses with reliable and secure solutions.</p>
+              <h3 className="text-xl font-semibold mb-2">Continuous Learning and Reinforcement</h3>
+              <p>The app incorporates interactive AR-based simulations, periodic quizzes, and push notifications to combat the decline in first aid knowledge over time. </p>
             </div>
           </div>
         </div>
@@ -74,58 +73,22 @@ export default function Home() {
           </h2>
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-8">
             <div className="p-6 bg-gray-50 shadow-lg rounded-lg">
-              <h3 className="text-xl font-semibold mb-2">Service One</h3>
+              <h3 className="text-xl font-semibold mb-2">AR-Based Offline First Aid.</h3>
               <p>
-                Comprehensive consulting to help you achieve your business
-                goals.
+                Provides emergency first aid guidance even without internet access.
               </p>
             </div>
             <div className="p-6 bg-gray-50 shadow-lg rounded-lg">
-              <h3 className="text-xl font-semibold mb-2">Service Two</h3>
+              <h3 className="text-xl font-semibold mb-2">Interactive Learning</h3>
               <p>
-                Advanced analytics to unlock insights and drive decision-making.
+                Quizzes and simulations for skill retention.
               </p>
             </div>
             <div className="p-6 bg-gray-50 shadow-lg rounded-lg">
-              <h3 className="text-xl font-semibold mb-2">Service Three</h3>
+              <h3 className="text-xl font-semibold mb-2">Institutional Subscriptions.</h3>
               <p>
-                Tailored software solutions designed to fit your unique
-                challenges.
+                Educational institutions can subscribe to premium services for performance tracking
               </p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Testimonials Section */}
-      <section
-        id="testimonials"
-        className="py-16 px-8 sm:px-20 bg-gradient-to-r from-indigo-dye to-pacific-cyan text-white"
-      >
-        <div className="max-w-6xl mx-auto text-center">
-          <h2 className="text-3xl sm:text-4xl font-bold mb-12">
-            What Our Clients Say
-          </h2>
-          <div className="grid grid-cols-1 sm:grid-cols-3 gap-8">
-            <div className="p-6 bg-white text-indigo-dye shadow-lg rounded-lg">
-              <p className="italic">
-                “StartupName provided exceptional service and innovative
-                solutions that transformed our business.”
-              </p>
-              <h3 className="mt-4 font-semibold">- Client A</h3>
-            </div>
-            <div className="p-6 bg-white text-indigo-dye shadow-lg rounded-lg">
-              <p className="italic">
-                “Their team is highly professional and dedicated to delivering
-                results.”
-              </p>
-              <h3 className="mt-4 font-semibold">- Client B</h3>
-            </div>
-            <div className="p-6 bg-white text-indigo-dye shadow-lg rounded-lg">
-              <p className="italic">
-                “We saw measurable growth thanks to their tailored strategies.”
-              </p>
-              <h3 className="mt-4 font-semibold">- Client C</h3>
             </div>
           </div>
         </div>
@@ -136,25 +99,45 @@ export default function Home() {
         <div className="max-w-6xl mx-auto text-center">
           <h2 className="text-3xl sm:text-4xl font-bold mb-12">About Us</h2>
           <div className="grid grid-cols-1 sm:grid-cols-4 gap-8">
-            {["Alice", "Bob", "Charlie", "Diana"].map((name, index) => (
+            {[
+              {
+                name: "Francheska",
+                description:
+                  "Francheska - COO, supporting the team by offering insights and suggestion.",
+              },
+              {
+                name: "Azlan",
+                description:
+                  "Azlan - CMO, masters creative branding and leads with innovation, driving impactful marketing strategies that elevate the company's presence.",
+              },
+              {
+                name: "Bridget",
+                description:
+                  "Bridget - CTO, applies a slightly “caring” and creative approach to a little bit of everything.",
+              },
+              {
+                name: "Seanne",
+                description:
+                  "Seanne - CTO #2, excels at multitasking, having successfully built 5 innovative platforms.",
+              },
+            ].map((member, index) => (
               <div key={index} className="p-6 bg-white shadow-lg rounded-lg">
-                <Image
-                  src={`/team/${name.toLowerCase()}.jpg`}
-                  alt={`${name} profile`}
-                  width={100}
-                  height={100}
-                  className="mx-auto rounded-full mb-4"
-                />
-                <h3 className="text-xl font-semibold">{name}</h3>
-                <p className="text-sm">
-                  {name} is an expert in innovative solutions and a valued
-                  member of our team.
-                </p>
+                <div className="relative w-32 h-32 mx-auto mb-4">
+                  <Image
+                    src={`/team/${member.name}.jpg`}
+                    alt={`${member.name} profile`}
+                    className="rounded-full object-cover"
+                    fill // Ensures the image fits within its parent
+                  />
+                </div>
+                <h3 className="text-xl font-semibold">{member.name}</h3>
+                <p className="text-sm">{member.description}</p>
               </div>
             ))}
           </div>
         </div>
       </section>
+
 
       {/* Call to Action Section */}
       <section
@@ -166,7 +149,7 @@ export default function Home() {
             Ready to Get Started?
           </h2>
           <p className="text-lg mb-8">
-            Join countless businesses that trust StartupName to achieve their
+            Join countless businesses that trust Blue Feather to achieve their
             goals.
           </p>
           <a

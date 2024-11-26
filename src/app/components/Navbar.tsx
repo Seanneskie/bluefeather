@@ -9,7 +9,7 @@ const Navbar: React.FC = () => {
         <div className="flex items-center">
           <img src="/static/logo.png" alt="Startup Logo" className="h-10 w-10 mr-2" />
           <span className="text-indigo-dye font-bold text-xl">
-            StartupName
+            Blue Feather 
           </span>
         </div>
 
