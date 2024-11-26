@@ -48,6 +48,21 @@ export default {
           dark: '#123a55ff',
         },
       },
+      keyframes: {
+        fadeIn: {
+          '0%': { opacity: '0', transform: 'translateY(20px)' },
+          '100%': { opacity: '1', transform: 'translateY(0)' },
+        },
+        scaleUp: {
+          '0%': { opacity: '0', transform: 'scale(0.9)' },
+          '100%': { opacity: '1', transform: 'scale(1)' },
+        },
+      },
+      animation: {
+        fadeIn: 'fadeIn 1s ease-out',
+        fadeInDelayed: 'fadeIn 1.5s ease-out',
+        scaleUp: 'scaleUp 1s ease-out',
+      },
     },
   },
   plugins: [],
