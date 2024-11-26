@@ -47,6 +47,7 @@ export default {
           light: '#2a688fff',
           dark: '#123a55ff',
         },
+      },
     },
   },
   plugins: [],
