@@ -33,7 +33,7 @@ export default function Home() {
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-8">
             <div className="p-6 bg-white shadow-lg rounded-lg animate-fadeInUp">
               <Image
-                src="bluefeather/feature1.svg"
+                src="/feature1.svg"
                 alt="Feature 1"
                 width={100}
                 height={100}
@@ -46,7 +46,7 @@ export default function Home() {
             </div>
             <div className="p-6 bg-white shadow-lg rounded-lg animate-fadeInUpDelayed">
               <Image
-                src="bluefeather/feature2.svg"
+                src="/feature2.svg"
                 alt="Feature 2"
                 width={100}
                 height={100}
@@ -57,7 +57,7 @@ export default function Home() {
             </div>
             <div className="p-6 bg-white shadow-lg rounded-lg animate-fadeInUpMoreDelayed">
               <Image
-                src="bluefeather/feature3.svg"
+                src="/feature3.svg"
                 alt="Feature 3"
                 width={100}
                 height={100}
@@ -125,7 +125,7 @@ export default function Home() {
               >
                 <div className="relative w-32 h-32 mx-auto mb-4">
                   <Image
-                    src={`bluefeather/team/${member.name}.jpg`}
+                    src={`/team/${member.name}.jpg`}
                     alt={`${member.name} profile`}
                     className="rounded-full object-cover"
                     width={100}
