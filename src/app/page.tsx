@@ -6,15 +6,18 @@ export default function Home() {
       {/* Hero Section */}
       <header className="bg-gradient-to-r from-pacific-cyan to-indigo-dye text-white py-16 px-8 sm:px-20">
         <div className="max-w-6xl mx-auto text-center">
-          <h1 className="text-4xl sm:text-6xl font-bold mb-6">
-            Welcome to Blue Feather - <span className="text-orchid-pink"> AR-Powered, Offline First Aid Solutions</span>
+          <h1 className="text-4xl sm:text-6xl font-bold mb-6 animate-fadeInUp">
+            Welcome to Blue Feather -{" "}
+            <span className="text-orchid-pink animate-fadeInUpDelayed">
+              AR-Powered, Offline First Aid Solutions
+            </span>
           </h1>
-          <p className="text-lg sm:text-xl mb-8">
+          <p className="text-lg sm:text-xl mb-8 animate-fadeInUpDelayed">
             Empowering Emergency Response: A Solution for Critical Moments
           </p>
           <a
             href="#services"
-            className="bg-white text-indigo-dye py-3 px-8 rounded-full text-lg font-medium hover:bg-orchid-pink hover:text-white transition-colors"
+            className="bg-white text-indigo-dye py-3 px-8 rounded-full text-lg font-medium hover:bg-orchid-pink hover:text-white transition-colors animate-bounce"
           >
             Explore Our Services
           </a>
@@ -24,9 +27,11 @@ export default function Home() {
       {/* Features Section */}
       <section id="features" className="py-16 px-8 sm:px-20 bg-gray-50">
         <div className="max-w-6xl mx-auto text-center">
-          <h2 className="text-3xl sm:text-4xl font-bold mb-12">Our Features</h2>
+          <h2 className="text-3xl sm:text-4xl font-bold mb-12 animate-fadeIn">
+            Our Features
+          </h2>
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-8">
-            <div className="p-6 bg-white shadow-lg rounded-lg">
+            <div className="p-6 bg-white shadow-lg rounded-lg animate-fadeInUp">
               <Image
                 src="/feature1.svg"
                 alt="Feature 1"
@@ -36,10 +41,10 @@ export default function Home() {
               />
               <h3 className="text-xl font-semibold mb-2">Augmented Reality (AR)-Based First Aid Guidance</h3>
               <p>
-              Provides real-time, step-by-step visual instructions tailored to specific emergencies, helping students overcome the panic and memory lapses that often occur during critical moments. 
+                Provides real-time, step-by-step visual instructions tailored to specific emergencies, helping students overcome the panic and memory lapses that often occur during critical moments.
               </p>
             </div>
-            <div className="p-6 bg-white shadow-lg rounded-lg">
+            <div className="p-6 bg-white shadow-lg rounded-lg animate-fadeInUpDelayed">
               <Image
                 src="/feature2.svg"
                 alt="Feature 2"
@@ -50,7 +55,7 @@ export default function Home() {
               <h3 className="text-xl font-semibold mb-2">Offline Access to Critical Information</h3>
               <p>In low-connectivity environments or during network outages, users can still access preloaded first-aid protocols and visual guides.</p>
             </div>
-            <div className="p-6 bg-white shadow-lg rounded-lg">
+            <div className="p-6 bg-white shadow-lg rounded-lg animate-fadeInUpMoreDelayed">
               <Image
                 src="/feature3.svg"
                 alt="Feature 3"
@@ -68,27 +73,21 @@ export default function Home() {
       {/* Services Section */}
       <section id="services" className="py-16 px-8 sm:px-20 bg-white">
         <div className="max-w-6xl mx-auto">
-          <h2 className="text-3xl sm:text-4xl font-bold mb-12 text-center">
+          <h2 className="text-3xl sm:text-4xl font-bold mb-12 text-center animate-fadeIn">
             Our Services
           </h2>
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-8">
-            <div className="p-6 bg-gray-50 shadow-lg rounded-lg">
-              <h3 className="text-xl font-semibold mb-2">AR-Based Offline First Aid.</h3>
-              <p>
-                Provides emergency first aid guidance even without internet access.
-              </p>
+            <div className="p-6 bg-gray-50 shadow-lg rounded-lg animate-fadeInUp">
+              <h3 className="text-xl font-semibold mb-2">AR-Based Offline First Aid</h3>
+              <p>Provides emergency first aid guidance even without internet access.</p>
             </div>
-            <div className="p-6 bg-gray-50 shadow-lg rounded-lg">
+            <div className="p-6 bg-gray-50 shadow-lg rounded-lg animate-fadeInUpDelayed">
               <h3 className="text-xl font-semibold mb-2">Interactive Learning</h3>
-              <p>
-                Quizzes and simulations for skill retention.
-              </p>
+              <p>Quizzes and simulations for skill retention.</p>
             </div>
-            <div className="p-6 bg-gray-50 shadow-lg rounded-lg">
-              <h3 className="text-xl font-semibold mb-2">Institutional Subscriptions.</h3>
-              <p>
-                Educational institutions can subscribe to premium services for performance tracking
-              </p>
+            <div className="p-6 bg-gray-50 shadow-lg rounded-lg animate-fadeInUpMoreDelayed">
+              <h3 className="text-xl font-semibold mb-2">Institutional Subscriptions</h3>
+              <p>Educational institutions can subscribe to premium services for performance tracking</p>
             </div>
           </div>
         </div>
@@ -97,37 +96,40 @@ export default function Home() {
       {/* About Section */}
       <section id="about" className="py-16 px-8 sm:px-20 bg-gray-50">
         <div className="max-w-6xl mx-auto text-center">
-          <h2 className="text-3xl sm:text-4xl font-bold mb-12">About Us</h2>
+          <h2 className="text-3xl sm:text-4xl font-bold mb-12 animate-fadeIn">
+            About Us
+          </h2>
           <div className="grid grid-cols-1 sm:grid-cols-4 gap-8">
             {[
               {
                 name: "Francheska",
-                description:
-                  "Francheska - COO, supporting the team by offering insights and suggestion.",
+                description: "Francheska - COO, supporting the team by offering insights and suggestions.",
               },
               {
                 name: "Azlan",
-                description:
-                  "Azlan - CMO, masters creative branding and leads with innovation, driving impactful marketing strategies that elevate the company's presence.",
+                description: "Azlan - CMO, masters creative branding and leads with innovation, driving impactful marketing strategies that elevate the company's presence.",
               },
               {
                 name: "Bridget",
-                description:
-                  "Bridget - CTO, applies a slightly “caring” and creative approach to a little bit of everything.",
+                description: "Bridget - CTO, applies a slightly “caring” and creative approach to a little bit of everything.",
               },
               {
                 name: "Seanne",
-                description:
-                  "Seanne - CTO #2, excels at multitasking, having successfully built 5 innovative platforms.",
+                description: "Seanne - CTO #2, excels at multitasking, having successfully built 5 innovative platforms.",
               },
             ].map((member, index) => (
-              <div key={index} className="p-6 bg-white shadow-lg rounded-lg">
+              <div
+                key={index}
+                className="p-6 bg-white shadow-lg rounded-lg animate-fadeInUp"
+                style={{ animationDelay: `${index * 0.2}s` }}
+              >
                 <div className="relative w-32 h-32 mx-auto mb-4">
                   <Image
                     src={`/team/${member.name}.jpg`}
                     alt={`${member.name} profile`}
                     className="rounded-full object-cover"
-                    fill // Ensures the image fits within its parent
+                    width={100}
+                    height={100}
                   />
                 </div>
                 <h3 className="text-xl font-semibold">{member.name}</h3>
@@ -138,23 +140,18 @@ export default function Home() {
         </div>
       </section>
 
-
       {/* Call to Action Section */}
-      <section
-        id="cta"
-        className="py-16 px-8 sm:px-20 bg-orchid-pink text-white text-center"
-      >
+      <section id="cta" className="py-16 px-8 sm:px-20 bg-orchid-pink text-white text-center animate-fadeIn">
         <div className="max-w-6xl mx-auto">
           <h2 className="text-3xl sm:text-4xl font-bold mb-6">
             Ready to Get Started?
           </h2>
           <p className="text-lg mb-8">
-            Join countless businesses that trust Blue Feather to achieve their
-            goals.
+            Join countless businesses that trust Blue Feather to achieve their goals.
           </p>
           <a
             href="#"
-            className="bg-white text-indigo-dye py-3 px-8 rounded-full text-lg font-medium hover:bg-pacific-cyan hover:text-white transition-colors"
+            className="bg-white text-indigo-dye py-3 px-8 rounded-full text-lg font-medium hover:bg-pacific-cyan hover:text-white transition-colors animate-bounce"
           >
             Contact Us Today
           </a>
