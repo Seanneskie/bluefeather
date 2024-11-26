@@ -127,11 +127,12 @@ export default function Home() {
                   <Image
                     src={`/bluefeather/team/${member.name}.jpg`}
                     alt={`${member.name} profile`}
-                    className="rounded-full object-cover"
-                    width={100}
-                    height={100}
+                    className="rounded-full object-cover border-4 border-gray-200"
+                    width={128} // Ensure a consistent width
+                    height={128} // Ensure a consistent height
                   />
                 </div>
+
                 <h3 className="text-xl font-semibold">{member.name}</h3>
                 <p className="text-sm">{member.description}</p>
               </div>
