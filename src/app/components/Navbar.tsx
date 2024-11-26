@@ -7,7 +7,7 @@ const Navbar: React.FC = () => {
       <div className="container mx-auto px-4 py-2 flex justify-between items-center">
         {/* Logo and Startup Name */}
         <div className="flex items-center">
-          <img src="bluefeather/bluefeather//static/logo.png" alt="Startup Logo" className="h-10 w-10 mr-2" />
+          <img src="bluefeather/static/logo.png" alt="Startup Logo" className="h-10 w-10 mr-2" />
           <span className="text-indigo-dye font-bold text-xl">
             Blue Feather 
           </span>
