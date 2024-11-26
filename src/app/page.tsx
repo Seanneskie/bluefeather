@@ -128,10 +128,12 @@ export default function Home() {
                     src={`/bluefeather/team/${member.name}.jpg`}
                     alt={`${member.name} profile`}
                     className="rounded-full object-cover border-4 border-gray-200"
-                    width={128} // Ensure a consistent width
-                    height={128} // Ensure a consistent height
+
+                    fill // Automatically fills the parent container
+
                   />
                 </div>
+
 
                 <h3 className="text-xl font-semibold">{member.name}</h3>
                 <p className="text-sm">{member.description}</p>
