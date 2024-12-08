@@ -93,7 +93,7 @@ const TeachersPage = () => {
     <section className="py-16 px-8 sm:px-20 bg-gray-50">
       <div className="max-w-6xl mx-auto">
         {/* Page Title and Description */}
-        <h1 className="text-4xl font-bold text-indigo-900 mb-8">Teacher’s Dashboard</h1>
+        <h1 className="text-4xl font-bold text-blue-500 mb-8">Teacher’s Dashboard</h1>
         <p className="text-lg text-indigo-700 mb-12">
           Welcome back! Manage your courses, track student progress, and create a dynamic learning
           environment with interactive tools.
@@ -168,10 +168,10 @@ const TeachersPage = () => {
               className="bg-white shadow-lg rounded-lg p-6 flex flex-col items-center hover:shadow-2xl transition-shadow duration-300"
             >
               <div className="mb-4">{feature.icon}</div>
-              <h3 className="text-xl font-semibold text-indigo-800 text-center">
+              <h3 className="text-xl font-semibold text-blue-500 text-center">
                 {feature.title}
               </h3>
-              <p className="text-indigo-600 text-center">{feature.description}</p>
+              <p className="text-indigo-700 text-center">{feature.description}</p>
             </div>
           ))}
         </div>

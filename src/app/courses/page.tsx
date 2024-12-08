@@ -9,14 +9,32 @@ const CoursesPage = () => {
           <div>
             <h1 className="text-4xl font-bold text-indigo-900">Welcome, Student!</h1>
             <p className="text-lg text-indigo-700">
-              Explore courses and track your progress to master essential first aid skills.
+              Navigate through courses and master essential first aid skills.
             </p>
           </div>
           <div>
-            <Link href="/profile" className="px-6 py-2 bg-blue-500 text-white font-bold rounded-lg hover:bg-blue-600 transition">
+            <Link
+              href="/profile"
+              className="px-6 py-2 bg-blue-500 text-white font-bold rounded-lg hover:bg-blue-600 transition"
+            >
               View Profile
             </Link>
           </div>
+        </div>
+
+        {/* Navigation Links */}
+        <div className="mb-12">
+          <nav className="flex space-x-6 text-indigo-800 font-medium">
+            <Link href="/courses" className="hover:text-blue-500">
+              All Courses
+            </Link>
+            <Link href="/courses/enrolled" className="hover:text-blue-500">
+              My Courses
+            </Link>
+            <Link href="/courses/available" className="hover:text-blue-500">
+              Available Courses
+            </Link>
+          </nav>
         </div>
 
         {/* Enrolled Courses Section */}
@@ -51,7 +69,7 @@ const CoursesPage = () => {
                 </div>
                 <p className="text-sm text-indigo-700 mb-2">Progress: {course.progress}%</p>
                 <Link
-                  href={`/courses/${course.id}`}
+                  href={`/courses${course.id}`}
                   className="text-blue-500 font-bold hover:underline"
                 >
                   Continue Course &rarr;
@@ -70,7 +88,7 @@ const CoursesPage = () => {
                 id: 3,
                 title: "Wound Care",
                 description: "Understand how to clean, dress, and treat wounds effectively.",
-              }
+              },
             ].map((course) => (
               <div
                 key={course.id}
@@ -79,7 +97,7 @@ const CoursesPage = () => {
                 <h3 className="text-xl font-semibold text-indigo-800 mb-2">{course.title}</h3>
                 <p className="text-indigo-600 mb-4">{course.description}</p>
                 <Link
-                  href={`/courses/${course.id}`}
+                  href={`/courses${course.id}`}
                   className="text-blue-500 font-bold hover:underline"
                 >
                   Enroll Now &rarr;
