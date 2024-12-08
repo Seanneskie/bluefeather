@@ -1,5 +1,6 @@
 // components/Navbar.tsx
 import React from 'react';
+import Link from 'next/link';
 
 const Navbar: React.FC = () => {
   return (
@@ -16,14 +17,19 @@ const Navbar: React.FC = () => {
         {/* Navigation Links */}
         <ul className="hidden md:flex space-x-6 text-indigo-dye font-medium">
           <li>
-            <a href="#home" className="hover:text-pacific-cyan">
+            <Link href="/" className="hover:text-pacific-cyan">
               Home
-            </a>
+            </Link>
           </li>
           <li>
-            <a href="#about" className="hover:text-pacific-cyan">
+            <Link href="/about" className="hover:text-pacific-cyan">
               About
-            </a>
+            </Link>
+          </li>
+          <li>
+            <Link href="/demo" className="hover:text-pacific-cyan">
+              Demo
+            </Link>
           </li>
           <li>
             <a href="#services" className="hover:text-pacific-cyan">
