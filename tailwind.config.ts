@@ -15,7 +15,10 @@ export default {
         'pacific-cyan': '#1da5cfff',
         'orchid-pink': '#eab2bcff',
         'white': '#ffffffff',
-
+      
+        indigo: {
+          700: '#01205f', // Override the indigo-100 color
+        },
         // Semantic colors using provided base colors
         primary: {
           DEFAULT: '#195076ff', // Indigo Dye as primary
