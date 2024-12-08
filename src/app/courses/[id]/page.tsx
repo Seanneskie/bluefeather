@@ -1,13 +1,24 @@
 // src/app/courses/[id]/page.tsx
+import { InferGetStaticPropsType } from "next";
 import LessonDetailClient from "./LessonDetailClient";
 
+// Define available course IDs for static generation
 export const generateStaticParams = async () => {
-  const courseIds = ["1", "2", "3"]; // Define the IDs available
+  const courseIds = ["1", "2", "3"];
   return courseIds.map((id) => ({ id }));
 };
 
-const LessonDetailPage = ({ params }: { params: { id: string } }) => {
-  const courseDetails = {
+// Define the props for the page using PageProps
+type LessonDetailPageProps = {
+  params: { id: string };
+};
+
+const LessonDetailPage: React.FC<LessonDetailPageProps> = ({ params }) => {
+  // Define course details
+  const courseDetails: Record<
+    string,
+    { title: string; description: string; steps: string[]; arFeature: string }
+  > = {
     1: {
       title: "Basic First Aid",
       description: "Learn how to handle common emergencies with this essential guide.",
@@ -43,6 +54,7 @@ const LessonDetailPage = ({ params }: { params: { id: string } }) => {
     },
   };
 
+  // Retrieve the specific course details based on the parameter
   const course = courseDetails[params.id];
 
   if (!course) {
