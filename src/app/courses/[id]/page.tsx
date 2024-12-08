@@ -7,12 +7,12 @@ export const generateStaticParams = async () => {
   return courseIds.map((id) => ({ id }));
 };
 
-// Define the props for the page using PageProps
+// Define the props for the page
 type LessonDetailPageProps = {
   params: { id: string };
 };
 
-const LessonDetailPage: React.FC<LessonDetailPageProps> = ({ params }) => {
+const LessonDetailPage = async ({ params }: LessonDetailPageProps) => {
   // Define course details
   const courseDetails: Record<
     string,
