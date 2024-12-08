@@ -19,6 +19,11 @@ export default {
         indigo: {
           700: '#01205f', // Override the indigo-100 color
         },
+
+        blue : {
+          500:'#6ab0e3', 
+
+        },
         // Semantic colors using provided base colors
         primary: {
           DEFAULT: '#195076ff', // Indigo Dye as primary

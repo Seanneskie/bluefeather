@@ -108,7 +108,7 @@ const TeachersPage = () => {
               icon: (
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
-                  className="h-12 w-12 text-blue-500"
+                  className="h-12 w-12 text-indigo-700"
                   fill="none"
                   viewBox="0 0 24 24"
                   stroke="currentColor"
@@ -128,7 +128,7 @@ const TeachersPage = () => {
               icon: (
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
-                  className="h-12 w-12 text-blue-500"
+                  className="h-12 w-12 text-indigo-700"
                   fill="none"
                   viewBox="0 0 24 24"
                   stroke="currentColor"
@@ -148,7 +148,7 @@ const TeachersPage = () => {
               icon: (
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
-                  className="h-12 w-12 text-blue-500"
+                  className="h-12 w-12 text-indigo-700"
                   fill="none"
                   viewBox="0 0 24 24"
                   stroke="currentColor"
@@ -168,10 +168,10 @@ const TeachersPage = () => {
               className="bg-white shadow-lg rounded-lg p-6 flex flex-col items-center hover:shadow-2xl transition-shadow duration-300"
             >
               <div className="mb-4">{feature.icon}</div>
-              <h3 className="text-xl font-semibold text-blue-500 text-center">
+              <h3 className="text-xl font-semibold text-indigo-700 text-center">
                 {feature.title}
               </h3>
-              <p className="text-indigo-700 text-center">{feature.description}</p>
+              <p className="text-blue-500 text-center">{feature.description}</p>
             </div>
           ))}
         </div>
