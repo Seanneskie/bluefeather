@@ -1,5 +1,4 @@
 // src/app/courses/[id]/page.tsx
-import { InferGetStaticPropsType } from "next";
 import LessonDetailClient from "./LessonDetailClient";
 
 // Define available course IDs for static generation

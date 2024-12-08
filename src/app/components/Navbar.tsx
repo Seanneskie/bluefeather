@@ -1,6 +1,7 @@
 // components/Navbar.tsx
-import React from 'react';
-import Link from 'next/link';
+import React from "react";
+import Link from "next/link";
+import Image from "next/image";
 
 const Navbar: React.FC = () => {
   return (
@@ -8,10 +9,14 @@ const Navbar: React.FC = () => {
       <div className="container mx-auto px-4 py-2 flex justify-between items-center">
         {/* Logo and Startup Name */}
         <div className="flex items-center">
-          <img src="/bluefeather/static/logo.png" alt="Startup Logo" className="h-10 w-10 mr-2" />
-          <span className="text-indigo-dye font-bold text-xl">
-            Blue Feather 
-          </span>
+          <Image
+            src="/bluefeather/static/logo.png"
+            alt="Startup Logo"
+            width={40}
+            height={40}
+            className="mr-2"
+          />
+          <span className="text-indigo-dye font-bold text-xl">Blue Feather</span>
         </div>
 
         {/* Navigation Links */}
