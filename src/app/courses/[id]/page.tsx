@@ -1,15 +1,14 @@
 // src/app/courses/[id]/page.tsx
 import LessonDetailClient from "./LessonDetailClient";
 
-// Define available course IDs for static generation
+// Ensure that the params structure matches what Next.js expects
 export const generateStaticParams = async () => {
   const courseIds = ["1", "2", "3"];
   return courseIds.map((id) => ({ id }));
 };
 
-// Page Component
+// Component definition
 const LessonDetailPage = ({ params }: { params: { id: string } }) => {
-  // Define course details
   const courseDetails: Record<
     string,
     { title: string; description: string; steps: string[]; arFeature: string }
@@ -49,7 +48,6 @@ const LessonDetailPage = ({ params }: { params: { id: string } }) => {
     },
   };
 
-  // Retrieve the specific course details based on the parameter
   const course = courseDetails[params.id];
 
   if (!course) {
