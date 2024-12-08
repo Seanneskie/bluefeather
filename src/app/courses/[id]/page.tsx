@@ -7,7 +7,7 @@ export const generateStaticParams = async () => {
   return courseIds.map((id) => ({ id }));
 };
 
-// Define the page component
+// Page Component
 const LessonDetailPage = ({ params }: { params: { id: string } }) => {
   // Define course details
   const courseDetails: Record<
